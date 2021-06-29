@@ -1,0 +1,17 @@
+.footer{
+    background-color: $couleur_background_footer;
+    color: #ffff;
+    padding: 20px;
+    .footer_title{
+        padding-bottom: 20px;
+        font-family: Shrikhand;
+        font-size: 1.2rem;
+      }
+    .footer_information  {
+        padding-bottom: 8px;
+        a{
+            text-decoration: none;
+            color: #ffff;
+        }
+    }
+}

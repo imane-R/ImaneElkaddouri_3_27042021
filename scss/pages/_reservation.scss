@@ -1,0 +1,28 @@
+.reservation{
+    padding: 10px 30px 50px 30px;
+    background-color: $couleur_background;
+    h1, p{
+      text-align: center;
+    }
+    h1{
+      font-size: 1.5rem;
+      padding: 20px;
+    }
+    p{
+      margin-bottom: 30px;
+    }
+  }
+  .btn_reservation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 40px;
+    width: 180px;
+    margin: auto;
+    background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
+    color: #ffff;
+    border: none;
+    box-shadow: 3px 5px 5px $couleur_shadow;
+    transition: opacity 500ms;
+  }
