@@ -1,9 +1,24 @@
+.restaurants{
+  background-color: $couleur_background;
+  padding: 0px 20px 46px;
+  h1{
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+.restaurants_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $couleur_background;
+}
+
 .restaurant_photo{
   img{
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     height: 180px;
-    width: 360px;
+    width: 100%;
   }
   }
 .carts{
@@ -35,6 +50,7 @@
         }
     }
   }
+}
   .new_restaurant{
     position: absolute;
     top: 5%;

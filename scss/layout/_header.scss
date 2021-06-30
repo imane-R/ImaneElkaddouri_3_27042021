@@ -1,17 +1,10 @@
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    position: relative;
-    >.location{
-        background-color:#EAEAEA ;
-        width: 100%;
-        margin-left: 24%;
-        padding: 17px;
-        >.fas{
-            margin-left: -57px;
-        }
-    }
+
+body{
+    margin: 0px;
 }
+.logo{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 9px -2px grey;
+}
+ 
