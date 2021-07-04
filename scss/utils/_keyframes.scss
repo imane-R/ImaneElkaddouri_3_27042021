@@ -1,0 +1,21 @@
+@keyframes apparition {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes spin{
+	to{
+		transform:rotateZ(360deg);
+	}
+}
+
+@keyframes spinner{
+	to{
+		transform:rotateZ(-360deg);
+	}
+}

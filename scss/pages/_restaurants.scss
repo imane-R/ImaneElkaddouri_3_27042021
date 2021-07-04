@@ -27,7 +27,6 @@
     overflow: hidden;
     position: relative;
     box-shadow: 3px 5px 5px $couleur_shadow;
-    max-width: fit-content;
     margin-bottom: 17px;
     a{
         text-decoration: none;
@@ -59,4 +58,10 @@
     padding: 6px 11px 6px 11px;
     color: $couleur_nouveau;
     font-size: smaller;
+  }
+  @media (min-width: 1024px){
+    .carts{
+      max-width: 540px;
+      margin: auto;
+    }
   }
