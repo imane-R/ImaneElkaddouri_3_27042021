@@ -49,4 +49,17 @@
         }
     } 
   }
+  @media (min-width: 1024px){
+    .fonctionnement .fonctionnement_list {
+      padding-top: 30px;
+      max-width: 1025px;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+    }
+    .description{
+      padding-right: 20px;
+    }
+  }
  

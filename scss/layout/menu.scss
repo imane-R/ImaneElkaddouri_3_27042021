@@ -1,6 +1,6 @@
 .btn_back_to_index{
     position: absolute;
-    left: 19gitpx;
+    left: 19px;
     top: 15px;
     
     .fa-arrow-left{
@@ -22,8 +22,14 @@
     justify-content: space-between;
     h1{
         font-family: "Shrikhand";
-        font-size: xx-large;
+        font-size: 29px;
         margin: 0px;
+    }
+    .fa-heart{
+        font-size: 1.5rem;
+        position: absolute;
+        right: 34px;
+        top: 33px;
     }  
 }
 .menu{
@@ -50,7 +56,7 @@
     &::after{
         content: "";
         width: 2.8rem;
-        height: .25rem;
+        height: .20rem;
         background-color: $couleur_tertiaire;
         position: absolute;
         left: 0;
@@ -70,10 +76,17 @@
     position: relative;
     h3{
         margin: 0px;
+        font-size: larger;
     }
     p{
         margin: 5px 0px -2px;
         font-weight: 300;
+        font-size: medium;
+    }
+    .menu_price{
+        position: absolute;
+        right: 29px;
+        top: 53%;
     }
 }
 .btn_menu{
@@ -97,3 +110,16 @@
         box-shadow: 3px 5px 5px $couleur_hover_btn;
       }
 }
+@media (min-width: 1024px){
+    .small-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .menu_content{
+    max-width: 360px;
+    min-width: 359px;
+}
+}
+
