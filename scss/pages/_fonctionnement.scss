@@ -11,6 +11,7 @@
     }
   
       .choice{
+        cursor: pointer;
         display: flex;
         border-radius: 20px;
         height: 60px;
@@ -18,7 +19,6 @@
         background-color: $couleur_background;
         margin: 0 20px 20px 0;
         box-shadow: 3px 5px 5px $couleur_shadow;
-        
 
         &:hover{
           background-color: $couleur_hover_fonctionnement;
