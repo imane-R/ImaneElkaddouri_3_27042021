@@ -32,6 +32,9 @@
         top: 33px;
     }  
 }
+
+
+
 .menu{
     background-color: $couleur_background;
     border-top-left-radius: 30px;
@@ -62,6 +65,7 @@
         left: 0;
         bottom: 0;
     }
+    animation: slideMenu 2s ease-in-out forwards;
 }
 }
 .menu_content{
@@ -88,6 +92,7 @@
         right: 29px;
         top: 53%;
     }
+    animation: slideMenu 2s ease-in-out forwards;
 }
 .btn_menu{
     display: flex;
@@ -103,12 +108,10 @@
     border: none;
     box-shadow: 3px 5px 5px $couleur_shadow;
     font-size: large;
-    transition: opacity 500ms;
-
-    &:hover{
-        opacity: 0.85;
-        box-shadow: 3px 5px 5px $couleur_hover_btn;
-      }
+    transition: transform 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 @media (min-width: 1024px){
     .small-menu{
