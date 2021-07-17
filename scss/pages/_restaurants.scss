@@ -59,6 +59,12 @@
     color: $couleur_nouveau;
     font-size: smaller;
   }
+  .fa-heart{
+    overflow: none;
+    &::before{
+      content: "";
+    }
+  }
   @media (min-width: 1024px){
     .carts{
       max-width: 540px;
