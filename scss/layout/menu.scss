@@ -24,16 +24,8 @@
         font-family: "Shrikhand";
         font-size: 29px;
         margin: 0px;
-    }
-    .fa-heart{
-        font-size: 1.5rem;
-        position: absolute;
-        right: 34px;
-        top: 33px;
-    }  
+    } 
 }
-
-
 
 .menu{
     background-color: $couleur_background;
@@ -65,7 +57,7 @@
         left: 0;
         bottom: 0;
     }
-    animation: slideMenu 2s ease-in-out forwards;
+    
 }
 }
 .menu_content{
@@ -78,29 +70,78 @@
     margin: 10px 0 20px 0;
     overflow: hidden;
     position: relative;
-    h3{
-        margin: 0px;
-        font-size: larger;
+
+    &:hover .menu_check{
+        transform: translateX(0px);
     }
-    p{
-        margin: 5px 0px -2px;
-        font-weight: 300;
-        font-size: medium;
+    &:hover .menu_check_icone{
+        transform: rotate(0deg);
     }
-    .menu_price{
-        position: absolute;
-        right: 29px;
-        top: 53%;
+    &:hover h3 {
+        width: calc(100% - 60px);
     }
-    animation: slideMenu 2s ease-in-out forwards;
+    &:hover p {
+        width: calc(100% - 70px);
+    }
+    &:hover .menu_price{
+        width: calc(100% - 269px);
+    }
+     h3{
+            margin: 0px;
+            font-size: larger;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+           width: 100%;
+    }
+     p{
+            margin: 5px 0px -2px;
+            font-weight: 300;
+            font-size: medium;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+        .menu_price{
+            position: absolute;
+            right: 11px;
+            top: 53%;
+            width: 9%;
+        }
+    
+
+    animation: slideMenu 1s ease-in-out forwards;
+}
+
+.menu_check{
+    
+    background-color: $couleur_tertiaire;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition-duration: 600ms;
+    transform: translateX(60px);
+    .menu_check_icone{
+        color: $couleur_white;
+        font-size: x-large;
+        transition-duration: 600ms;
+        transform: rotate(-360deg);
+
+    }
 }
 .btn_menu{
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    height: 60px;
-    width: 180px;
+    height: 53px;
+    width: 192px;
     margin: 50px auto 50px auto;
     cursor: pointer;
     background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
@@ -108,9 +149,12 @@
     border: none;
     box-shadow: 3px 5px 5px $couleur_shadow;
     font-size: large;
-    transition: transform 400ms;
+    opacity: 1;
+    transition: all 400ms;
+    
     &:hover {
         transform: scale(1.15);
+        opacity: 0.8;
     }
 }
 @media (min-width: 1024px){

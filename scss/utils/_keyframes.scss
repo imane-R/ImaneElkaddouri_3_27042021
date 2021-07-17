@@ -25,6 +25,7 @@
   0% {
     opacity: 0;
     transform: translateY(-40px);
+    animation-timing-function: steps(5, end);
   }
 
   100% {

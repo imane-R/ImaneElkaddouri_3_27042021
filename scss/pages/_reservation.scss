@@ -19,15 +19,16 @@
     justify-content: center;
     cursor: pointer;
     border-radius: 30px;
-    height: 44px;
-    width: 192px;
+    height: 49px;
+    width: 188px;
     margin: auto;
     background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
     color: $couleur_white;
     border: none;
     box-shadow: 3px 5px 5px $couleur_shadow;
-    transition: transform 400ms;
+    transition: all 400ms;
     &:hover {
         transform: scale(1.15);
+        opacity: 0.8;
     }
   }
