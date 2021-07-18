@@ -7,13 +7,12 @@
     text-align: center;
     position: relative;
     font-size: larger;
-    &.fa-map-marker-alt{
-        margin-right:24px ;
-    }
     & h4{
-        font-size: medium;
+        font-size: large;
         font-weight: 500;
-        margin: 0;
-        margin-left: 19px;
+        margin: auto;
     }
+        .location-icon{
+            margin-right:15px ;
+        }
 }

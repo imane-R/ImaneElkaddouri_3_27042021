@@ -190,14 +190,11 @@
         width: calc(100% - 88%);
     }
 }
-    h3{
+    h3 p{
+        white-space: nowrap;
         overflow: hidden;
-        text-overflow: clip;
-        width: 100%;
+        text-overflow: ellipsis;
+        width: 100%
 }
- p{
-        overflow: hidden;
-        text-overflow: clip;
-        width: 100%;
-    }
+ 
 }
