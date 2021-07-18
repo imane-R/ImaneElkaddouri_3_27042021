@@ -46,7 +46,27 @@
             left: 86%;
             font-size: 1.5rem;
             color: #404040;
+            z-index: 2;
+            .heart-animation{
+              left: 0%;
+              top: 7%;
+              width: 25px;
+              height: 24px;
+              position: absolute;
+              background: $couleur_white;
+              border: transparent;
+              z-index: -1;
         }
+        #fill{
+          left: 0%;
+          top: 7%;
+          position: absolute;
+          color: $couleur_primaire;
+          z-index: -1;
+      }
+
+      }
+
     }
   }
 }
@@ -67,7 +87,14 @@
   }
   @media (min-width: 1024px){
     .carts{
-      max-width: 540px;
-      margin: auto;
+      margin-bottom: 0px;
+    }
+    .restaurants{
+      & .restaurants_list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin: 0;
+      }
     }
   }
