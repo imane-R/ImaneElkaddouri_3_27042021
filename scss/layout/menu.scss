@@ -24,7 +24,14 @@
         font-family: "Shrikhand";
         font-size: 29px;
         margin: 0px;
-    } 
+    }
+    .fa-heart{
+        font-size: 1.5rem;
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        z-index: 10;
+    }
 }
 
 .menu{
@@ -77,21 +84,23 @@
     &:hover .menu_check_icone{
         transform: rotate(0deg);
     }
-    &:hover h3 {
+    &:hover h3  {
         width: calc(100% - 60px);
     }
     &:hover p {
         width: calc(100% - 70px);
     }
     &:hover .menu_price{
-        width: calc(100% - 269px);
+        width: calc(100% - 76%);
     }
+
+
      h3{
             margin: 0px;
             font-size: larger;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
+            text-overflow: ellipsis ;
            width: 100%;
     }
      p{
@@ -105,11 +114,11 @@
         }
         .menu_price{
             position: absolute;
-            right: 11px;
+            right: 4%;
             top: 53%;
             width: 9%;
         }
-    
+        
 
     animation: slideMenu 1s ease-in-out forwards;
 }
@@ -169,4 +178,26 @@
     min-width: 359px;
 }
 }
-
+@media (min-width: 666px) and (max-width: 1023px){
+    .menu_content{
+        &.menu_price{
+            .menu_price{
+                position: absolute;
+                right: 0%;
+            }
+        }
+    &:hover .menu_price{
+        width: calc(100% - 88%);
+    }
+}
+    h3{
+        overflow: hidden;
+        text-overflow: clip;
+        width: 100%;
+}
+ p{
+        overflow: hidden;
+        text-overflow: clip;
+        width: 100%;
+    }
+}

@@ -1,9 +1,4 @@
 .fa-heart{
-    font-size: 1.5rem;
-    position: absolute;
-    right: 34px;
-    top: 33px;
-    z-index: 10;
     &:hover{
         color: $couleur_primaire;
     }
@@ -18,9 +13,13 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    background: #f3f3f3;
+    background:$couleur_white;
     border: transparent;
     z-index: 9;
+}
+#fill{
+    color: $couleur_primaire;
+    z-index: 8;
 }
 
 @keyframes heart-frame-animation {
@@ -28,7 +27,3 @@
     to {height: 0px;}
   }
 
-#fill{
-    color: $couleur_primaire;
-    z-index: 8;
-}
