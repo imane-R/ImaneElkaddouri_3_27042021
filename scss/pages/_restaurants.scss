@@ -57,7 +57,7 @@
               border: transparent;
               z-index: -1;
         }
-        #fill{
+        .fill{
           left: 0%;
           top: 7%;
           position: absolute;
@@ -78,12 +78,6 @@
     padding: 6px 11px 6px 11px;
     color: $couleur_nouveau;
     font-size: smaller;
-  }
-  .fa-heart{
-    overflow: none;
-    &::before{
-      content: "";
-    }
   }
   @media (min-width: 1024px){
     .carts{

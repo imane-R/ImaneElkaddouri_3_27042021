@@ -1,4 +1,5 @@
 .location{
+    display: flex;
     background-color:#EAEAEA ;
     width: 100%;
     padding: 17px 0px;
@@ -6,7 +7,13 @@
     text-align: center;
     position: relative;
     font-size: larger;
-    .fa-map-marker-alt{
+    &.fa-map-marker-alt{
         margin-right:24px ;
+    }
+    & h4{
+        font-size: medium;
+        font-weight: 500;
+        margin: 0;
+        margin-left: 19px;
     }
 }
