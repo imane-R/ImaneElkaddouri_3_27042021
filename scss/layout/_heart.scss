@@ -13,11 +13,11 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    background:$couleur_white;
+    background:$couleur_background;
     border: transparent;
     z-index: 9;
 }
-#fill{
+.fill{
     color: $couleur_primaire;
     z-index: 8;
 }
