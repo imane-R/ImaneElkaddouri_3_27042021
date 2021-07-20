@@ -24,8 +24,7 @@
 @keyframes slideMenu {
   0% {
     opacity: 0;
-    transform: translateY(-40px);
-    animation-timing-function: steps(5, end);
+    transform: translateY(10px);
   }
 
   100% {
