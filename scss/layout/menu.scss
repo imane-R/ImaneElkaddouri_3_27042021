@@ -185,14 +185,16 @@
 }
 @media (min-width: 1024px){
     .small-menu{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
     .menu_content{
-    max-width: 360px;
+    max-width: none;
     min-width: 359px;
+    &:hover .menu_price{
+        width: calc(100% - 85%);
+    }
 }
 }
 @media (min-width: 666px) and (max-width: 1023px){
@@ -206,12 +208,11 @@
     &:hover .menu_price{
         width: calc(100% - 88%);
     }
-}
-    h3 p{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%
-}
- 
+    &:hover h3{
+        width: 100%;
+    }
+    &:hover  p{
+        width: 100%;
+    }
+} 
 }
