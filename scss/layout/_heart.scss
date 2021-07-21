@@ -1,6 +1,6 @@
 .outline-heart{
     &:hover{
-        color: $couleur_primaire;
+        color:transparent;
     }
     &:hover ~ .heart-animation{
         animation: heart-frame-animation 1s ease-in-out forwards;
@@ -18,7 +18,9 @@
     z-index: 9;
 }
 .fill{
-    color: $couleur_primaire;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: transparent;
+    -webkit-background-clip: text;
     font-size: 1.5rem;
     position: absolute;
     right: 34px;
